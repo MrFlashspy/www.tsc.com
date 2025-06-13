@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con fondo y secciones</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background-image: url('https://assets.onecompiler.app/43mf4ca8d/43mf539as/fondo-gris-movimiento-tecnologia-moderna-lineas-ardientes-papel-tapiz-degradado-abstracto_391867-64%20(2).jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero .contenido {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .seccion-contexto {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .seccion-contexto h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .seccion-contexto p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .seccion-links {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .seccion-links h2 {
+      margin-bottom: 30px;
+    }
+
+    .seccion-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .seccion-links li {
+      margin: 15px 0;
+    }
+
+    .seccion-links a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .seccion-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Tooltip (viñeta) */
+    .seccion-links a[data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 100%;
+      top: 0;
+      margin-left: 15px;
+      padding: 8px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      white-space: pre-line;
+      font-size: 14px;
+      width: 220px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sección superior -->
+  <div class="hero">
+    <div class="contenido">
+      <h1>TSC</h1>
+      <p>Tecnología, Sociedad y Conocimiento</p>
+    </div>
+  </div>
+
+  <!-- Sección intermedia de contexto -->
+  <div class="seccion-contexto">
+    <h2>¿Qué es Tecnología, Sociedad y Conocimiento?</h2>
+    <p>
+      La interrelación entre tecnología, sociedad y conocimiento forma parte esencial del mundo actual. 
+      La tecnología no es solo herramientas, sino una construcción social que transforma y es transformada por la cultura y las necesidades humanas. 
+      El conocimiento es el motor que impulsa la innovación, y la sociedad se adapta y evoluciona a partir de estos avances. 
+      En conjunto, estos elementos determinan cómo vivimos, trabajamos, nos comunicamos y aprendemos. 
+      Esta relación está en constante cambio debido a la digitalización, el acceso a la información y los desafíos éticos del entorno digital.
+    </p>
+  </div>
+
+  <!-- Sección de enlaces con viñetas -->
+  <div class="seccion-links">
+    <h2>Temas Relacionados</h2>
+    <ul>
+      <li><a href="concepto.html" data-tooltip="Explica qué es la tecnología, las TIC, el conocimiento y cómo influyen en la sociedad.">Concepto de Tecnología, TIC, conocimiento y sociedad</a></li>
+      <li><a href="sociedad.html" data-tooltip="Diferencia entre sociedad de la información y del conocimiento: una basada en datos, otra en el uso inteligente de esos datos.">Sociedad de la información y el conocimiento. Concepto y diferencia</a></li>
+      <li><a href="trabajadores.html" data-tooltip="Personas cuyo trabajo depende del manejo de información y conocimiento, clave en la economía digital.">Trabajadores del conocimiento</a></li>
+      <li><a href="evolucion.html" data-tooltip="Muestra cómo han cambiado las tecnologías del conocimiento a lo largo del tiempo. (Incluir meme visual).">Evolución de las tecnologías del conocimiento</a></li>
+      <li><a href="competencias.html" data-tooltip="Habilidades necesarias para desenvolverse de forma efectiva en entornos digitales. (Incluir cuadro comparativo).">Competencias digitales</a></li>
+      <li><a href="ciberciudadania.html" data-tooltip="Participación responsable en el mundo digital. (Incluir una aplicación interactiva).">Ciberciudadanía</a></li>
+      <li><a href="infodemia.html" data-tooltip="Exceso de información (a menudo falsa) que dificulta encontrar fuentes confiables. (Incluir infografía).">Infodemia</a></li>
+      <li><a href="marketing.html" data-tooltip="Uso de medios digitales para promocionar productos o servicios.">Marketing digital</a></li>
+      <li><a href="seguridad.html" data-tooltip="Conjunto de prácticas para proteger la información digital ante amenazas y fraudes.">Seguridad informática teoría digital</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
